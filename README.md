@@ -13,7 +13,7 @@ For SNP data, the first line quality control steps include (a) call rate check p
 ## More information
 For more information about PKAFnet, please read the following paper:
 
-    Tao Wang,  Xiumei Chen, Jiawei Zhang, Qianjin Feng *, Meiyan Huang *. Deep Mult-imodality-disentangled Association Analysis Network for Imaging Genetics in Neurodegenerative Diseases, Medical Image Analysis, 2023. 
+    Tao Wang,  Xiumei Chen, Jiawei Zhang, Qianjin Feng *, Meiyan Huang *. Deep Mult-imodality-disentangled Association Analysis Network for Imaging Genetics in Neurodegenerative Diseases. Medical Image Analysis, 2023. 
 
       
 Please also cite this paper if you are using DMAAN for your research!
