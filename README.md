@@ -13,6 +13,7 @@ For SNP data, the first line quality control steps include (a) call rate check p
 ## More information
 For more information about PKAFnet, please read the following paper:
 
-    Lai, H., Fu, S., Zhang, J., Cao, J., Feng, Q., Lu, L., & Huang, M. Prior Knowledge-Aware Fusion Network for Prediction of Macrovascular Invasion in Hepatocellular Carcinoma. IEEE Transactions on Medical Imaging, 2022.
+    Tao Wang,  Xiumei Chen, Jiawei Zhang, Qianjin Feng *, Meiyan Huang *. Deep Mult-imodality-disentangled Association Analysis Network for Imaging Genetics in Neurodegenerative Diseases, Medical Image Analysis, 2023. 
+
       
-Please also cite this paper if you are using PKAFnet for your research!
+Please also cite this paper if you are using DMAAN for your research!
