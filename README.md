@@ -1,6 +1,6 @@
 # DMAAN for Imaging genetics
 
-We provide the the code of Deep Multimodality-Disentangled Association Analysis Networ (DMAAN). 
+We provide the the code of Deep Multimodality-Disentangled Association Analysis Networ (DMAAN).  (VERSION-keras)
 
 ## Data preprocess
 
@@ -11,7 +11,7 @@ For DTI data, 65 original format images where the b0 images do not activate the 
 For SNP data, the first line quality control steps include (a) call rate check per subject and SNP marker, (b) gender check, (c) sibling pair identification, (d) the Hardy-Weinberg equilibrium test, (e) marker removal by the minor allele frequency, and (f) population stratification. The second line preprocessing steps include the removal of SNPs with (a) more than 2% missing values, (b) minor allele frequencies of below 5\%, and (c) Hardy-Weinberg equilibrium 10e–6. The Michigan Imputation Server (https://imputationserver.readthedocs.io/en/latest/) with Minimac4 was applied on all subjects to perform genotype imputation, where 1000G Phase I Integrated Release Version 3 haplotypes (http://www.1000genomes.org)  was used as reference panel. Additionally, a global sure independence screening procedure presented in our previous study was applied to select the candidate SNPs. Herein, the selection of p-values in the SNP screening procedure is based on the amount of data in different datasets. 
 
 ## More information
-For more information about PKAFnet, please read the following paper:
+For more information about DMAAN, please read the following paper:
 
     Tao Wang,  Xiumei Chen, Jiawei Zhang, Qianjin Feng *, Meiyan Huang *. Deep Mult-imodality-disentangled Association Analysis Network for Imaging Genetics in Neurodegenerative Diseases. Medical Image Analysis, 2023. 
 
