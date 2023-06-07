@@ -6,7 +6,6 @@ import utils
 
 class engine(tf.keras.Model):
     tf.keras.backend.set_floatx('float32')
-    """ENGINE framework"""
 
     def __init__(self, N_o):
         super(engine, self).__init__()
