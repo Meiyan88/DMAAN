@@ -19,4 +19,3 @@ For more information about DMAAN, please read the following paper:
 Please also cite this paper if you are using DMAAN for your research!
 
 
-More details will be made public soon.
