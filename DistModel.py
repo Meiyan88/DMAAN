@@ -1,8 +1,3 @@
-"""
-Script for ENGINE: Enhancing Neuroimaging and Genetic Information by Neural Embedding framework
-Written in Tensorflow 2.1.0
-"""
-
 # Import APIs
 import tensorflow as tf
 import numpy as np
