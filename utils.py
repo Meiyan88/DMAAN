@@ -4,6 +4,34 @@ from sklearn.preprocessing import MinMaxScaler
 from scipy.io import loadmat
 from sklearn.model_selection import StratifiedKFold, train_test_split
 
+
+def SNP_encoder(X_SNP_tr, X_SNP_ts):
+    # Based on population, this encoder transforms the discrete SNP vectors to be numerical.
+    # The encoder is fit by the training SNP data and applied to the testing SNP data.
+
+    # Fit the encoding table
+    encoder = np.empty(shape=(3, X_SNP_tr.shape[1]))
+    for i in range(X_SNP_tr.shape[1]):
+        for j in [0, 1, 2]:
+            encoder[j, i] = np.array(X_SNP_tr[:, i] == j).sum()
+
+    encoder /= X_SNP_tr.shape[0]  # (3, 1275)
+
+    X_E_SNP_tr = np.empty(shape=X_SNP_tr.shape)
+    X_E_SNP_ts = np.empty(shape=X_SNP_ts.shape)
+
+    # Map the SNP values
+    for sbj in range(X_SNP_tr.shape[0]):
+        for dna in range(X_SNP_tr.shape[-1]):
+
+            X_E_SNP_tr[sbj, dna] = encoder[..., dna][int(X_SNP_tr[sbj, dna])]
+
+    for sbj in range(X_SNP_ts.shape[0]):
+        for dna in range(X_SNP_ts.shape[-1]):
+            X_E_SNP_ts[sbj, dna] = encoder[..., dna][int(X_SNP_ts[sbj, dna])]
+
+    return X_E_SNP_tr, X_E_SNP_ts
+    
 def load_dataset_pair(path, SNP_path, fold, task, SNP_mapping=True, divide_ICV=False, random_state=5930):
     data_all = np.loadtxt(path, delimiter=',', dtype=str)
     data_all = data_all[1:, :]
